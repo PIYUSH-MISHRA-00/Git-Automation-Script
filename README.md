@@ -1,4 +1,4 @@
-# Git-Automation
+# Git-Automation-Script
 Script to automate Git from project working directory with a menu to choose from, you just have configure once and the script can be used for the following operations.
 
 ```
