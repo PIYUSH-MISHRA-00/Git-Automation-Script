@@ -1,5 +1,7 @@
 #! /bin/bash
 
+python /home/user/VOICE.py
+
 ### Git automation script for automating git clone, push and pull ###
 ### Created by PIYUSH-MISHRA-00 ###
 
@@ -20,8 +22,9 @@ echo -e "\t(2) Pull"
 echo -e "\t(3) Push"
 echo -e "\t(4) Generate Patch"
 echo -e "\t(5) Send Email"
-echo -e "\t(6) Exit"
-echo -n "Enter your choice [0-6]: "
+echo -e "\t(6) VOICE"
+echo -e "\t(7) Exit"
+echo -n "Enter your choice [0-7]: "
 
 read choice
 
@@ -143,16 +146,21 @@ case $choice in
     git patch $file_diff
    ;; 
 
- 5) echo Send Email
-    echo Enter the receiver... ??
+ 5) echo "Send Email"
+    echo "Enter the receiver... ??"
     read receiver
-    echo File you want to mail ??
+    echo "File you want to mail ??"
     read filename 
     git send-email --to=$receiver $filename
     ;;
 
+ 6) echo "Initializing VOICE"
+    chmod u+x VOICE.py
+    python VOICE.py
+    ;;
     
- 6) echo "Quitting..."
+
+ 7) echo "Quitting..."
     exit
     ;;
 
