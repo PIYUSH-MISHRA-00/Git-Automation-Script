@@ -24,6 +24,21 @@ Enter your choice [0-6]:
 $./github.sh
 ```
 
+# For Windows User
+
+* Use the Windows Subsystem for Linux (WSL) with a valid linux distribution and run the following command in the terminal
+
+```
+wsl
+```
+* Then run the following command and press Y
+
+```
+$sudo apt install git
+```
+
+
+
 # How prepare the file
 
 Use the file as super user or admin acces and provide the file with write access by :
