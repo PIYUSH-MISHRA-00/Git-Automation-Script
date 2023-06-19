@@ -1,57 +1,31 @@
-# Git-Automation-Script
-Script to automate Git from project working directory with a menu to choose from, you just have configure once and the script can be used for the following operations.
-
+# Git-Automation-Script-web interface
+# What is Git Automation Script 
+* Working with git and docker requires you to work with repetitive commands on the terminal.
+  Automation is applied to work with these repetitive task easily.
+* Git Automation Script is a one way to execute the repetitive commands of the terminal with ease beneath a user friendly web interface  and lets you perform code completion and generation with OpenAI prompts features all in one place.
+# About the script 
+* Starting from the BASH written menu style script that needs to be configured once the script is available in the form of web interface.
+The script executes the command for the user on the local machine where user has to access a simple interface and can ease out from executing the commands on the terminal.
+* The script uses Python and streamlit to perform the above stated operation.
+Requirements 
+* Requirements – Linux – Microsoft Windows – Mac OS 
+* Softwares and Other Dependencies
+* Python, Streamlit, Git • Docker • OpenAI API
+Prequisites -  
+* The script uses python as its dependencies and need to have git, docker, python and its dependencies installed in order to run the script efficiently. Make sure to have the following installed and running. 
+After installing and running the following just run the following commands in the project directory
 ```
-Which Git operations you want to perform ?
-(0) Configure (configures the script for continuous uses)"
-(1) Clone"
-(2) Pull"
-(3) Push"
-(4) Generate Patch"
-(5) Send Email"
-(6) VOICE
-(7) Exit"
-Enter your choice [0-7]:
+pip install -r requirements.txt
 ```
-
-# About
-
-* Use the script **"github.sh"** file inside your project working directory to automate git procedures by **just configuring the script once and use it any number of times.** 
-* You just have to use the configure option once and if you wish to change the working directory you just have to use the configure option to start working with the new project.
-
-* Just give the file write access and use the script by running:
-
+# How to run the script
+The script provides an approach to the users to use the script with standalone or oraganizational usage. 
+To run the script just enter the following commands on the terminal where the project is placed:- 
+* If for organizational use cases
 ```
-$./github.sh
-```
-
-# For Windows User
-
-* Use the Windows Subsystem for Linux (WSL) with a valid linux distribution and run the following command in the terminal
-
-```
-wsl
-```
-* Then run the following command and press Y
-
-```
-$sudo apt install git
+streamlit run Admin_And_Login.py
 ```
 
-
-
-# How prepare the file
-
-Use the file as super user or admin acces and provide the file with write access by :
+* If for standalone use cases
 ```
-$ chmod +x github.sh
+streamlit run Git-Automation-Script.py
 ```
-inside the terminal, in the project working directory.
-
-# How to use the script
-
-Keep working on project files and run :
-``` 
-$ ./github.sh
-```
-in the project working directory's terminal, while the **"github.sh"** file is present and provided with **write access** and you will be able to handle your project files with git operations using a simple menu driven approach.
