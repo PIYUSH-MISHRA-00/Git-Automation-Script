@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8309625.svg)](https://doi.org/10.5281/zenodo.8309625)
+
 # Git-Automation-Script
 Script to automate Git from project working directory with a menu to choose from, you just have configure once and the script can be used for the following operations.
 
